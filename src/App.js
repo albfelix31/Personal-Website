@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  withRouter,
+} from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Home from './components/Homepage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <Container fluid>
+          <Row className="justify-content-center">
+            <Switch>
+              {/* HomePage */}
+              <Route exact path="/" component={Home} />
+            </Switch>
+          </Row>
+        </Container>
+      </Router>
+    );
+  }
 }
 
-export default App;
+export default withRouter(App);
