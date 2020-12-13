@@ -1,0 +1,12 @@
+.main-container {
+    text-align: center;
+}
+
+.picture-bio-container {
+    display: flex;
+}
+
+.btns-container {
+    display: flex;
+    justify-content: space-around;
+}
