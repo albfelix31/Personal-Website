@@ -1,12 +1,14 @@
 .main-container {
     text-align: center;
 }
-
-.picture-bio-container {
-    display: flex;
+.profile-pic {
+    height: 250px;
+    float: right;
+}
+.bio {
+    text-align: left;
 }
 
-.btns-container {
-    display: flex;
-    justify-content: space-around;
+.links {
+    text-align: left;
 }
