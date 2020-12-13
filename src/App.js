@@ -2,8 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  withRouter,
+  Route
 } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -26,4 +25,4 @@ class App extends React.Component {
   }
 }
 
-export default withRouter(App);
+export default App;
