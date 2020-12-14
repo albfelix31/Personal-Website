@@ -52,7 +52,7 @@ export default class Homepage extends React.Component {
                   </a>
                 </div>            
               </div>
-              <div>
+              <div className="second-set-buttons">
                 <div >
                   <a href="https://drive.google.com/file/d/1r5bdN2MqkovZf2d2gyCGk9qRx7IAnPVK/view?usp=sharing" rel="noreferrer" 
                   target="_blank" id="button" class="resume-button">
