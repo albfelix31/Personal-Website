@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'react-bootstrap/Image';
 import './Homepage.css';
 import ProfilePic from '../components/ProfilePic.png';
-import Background from '../components/Background.jpg';
 import { faFilePdf} from "@fortawesome/free-solid-svg-icons";
 // import { faFileAlt, faFilePdf} from "@fortawesome/free-regular-svg-icons;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +11,7 @@ export default class Homepage extends React.Component {
   render() {
     return (
       <body>
-        <div class="main-container justify-content-md-center">
+        <div class="main-container">
           <h1 class="salutations">👋 hi there! </h1>
           <div class="profile-pic-bio-container">
             <div className="profile-pic-container">
@@ -52,7 +51,7 @@ export default class Homepage extends React.Component {
                   </a>
                 </div>            
               </div>
-              <div className="second-set-buttons">
+              <div>
                 <div >
                   <a href="https://drive.google.com/file/d/1r5bdN2MqkovZf2d2gyCGk9qRx7IAnPVK/view?usp=sharing" rel="noreferrer" 
                   target="_blank" id="button" class="resume-button">
