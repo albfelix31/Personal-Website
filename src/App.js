@@ -13,7 +13,7 @@ class App extends React.Component {
         <Router>
               <Switch>
                 {/* HomePage */}
-                <Route exact path="/" component={Homepage} />
+                <Route path='*' exact={true} component={Homepage} />
               </Switch>
         </Router>
       </body>
